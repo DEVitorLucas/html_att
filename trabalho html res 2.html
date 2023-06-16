@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Tags HTML</title>
+    <style>
+        /* Estilos CSS para o cabeçalho */
+        header {
+            background: var(--color-secondary);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Poppins", sans-serif;
+            color: var(--font-color);
+            font-size: 36px;
+        }
+
+        nav ul {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            margin-right: 10px;
+            /*position: relative;*/
+        }
+
+        nav ul li a {
+            font-family: "Poppins", sans-serif;
+            color: var(--font-color);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f5f5f5;
+
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+
+            padding: 12px 16px;
+            color: #222222;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .white-text {
+            color: #fff;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .centralizada {
+            width: 100%;
+            max-height: 34rem;
+            height: 100%;
+            background: var(--color-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        corletra {
+            color: var(--font-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+
+            z-index: 9999;
+            display: fixed;
+        }
+
+        button {
+            padding: 6px 20px;
+            border-radius: 10px;
+            border: 2px solid var(--color-accent);
+        }
+
+        .theme-light {
+            --color-primary: #e5e8ec;
+            --color-secondary: #f5f5f5;
+            --color-accent: #111111;
+            --font-color: #000000;
+        }
+
+        .theme-dark {
+            --color-primary: #2b302d;
+            --color-secondary: #1d1d1d;
+            --color-accent: #fa7901;
+            --font-color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1>Tags HTML</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn">Página Inicial</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\vitor\Untitled-1.html">Walter White</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Estrutura</a>
+                    <div class="dropdown-content">
+                        <a href="#" id="doctype">Doctype</a>
+                        <a href="#" id="html">html</a>
+                        <a href="#">head</a>
+                        <a href="#">title</a>
+                        <a href="#">Meta</a>
+                        <a href="#">Body</a>
+                        <a href="#">Style</a>
+                        <a href="#">Link</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Texto</a>
+                    <div class="dropdown-content">
+                        <a href="#">P</a>
+                        <a href="#">H1</a>
+                        <a href="#">H2</a>
+                        <a href="#">H3</a>
+                        <a href="#">H4</a>
+                        <a href="#">H6</a>
+                        <a href="#">STRONG</a>
+                        <a href="#">B</a>
+                        <a href="#">I</a>
+                        <a href="#">U</a>
+                        <a href="#">MARK</a>
+                        <a href="#">BR</a>
+                        <a href="#">HR</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Link e Imagem</a>
+                    <div class="dropdown-content">
+                        <a href="#">A</a>
+                        <a href="#">BASE</a>
+                        <a href="#">IMG</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Listas</a>
+                    <div class="dropdown-content">
+                        <a href="#">UL</a>
+                        <a href="#">OL</a>
+                        <a href="#">LI</a>
+                        <a href="#">DL</a>
+                        <a href="#">DD</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Tabelas</a>
+                    <div class="dropdown-content">
+                        <a href="#">TABLE</a>
+                        <a href="#">TR</a>
+                        <a href="#">TD</a>
+                        <a href="#">TH</a>
+                        <a href="#">TBODY</a>
+                        <a href="#">THEAD</a>
+                        <a href="#">TFOOT</a>
+                        <a href="#">COL</a>
+                        <a href="#">COLGROUP</a>
+                        <a href="#">CAPTION</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Forms</a>
+                    <div class="dropdown-content">
+                        <a href="#">FORM</a>
+                        <a href="#">INPUT</a>
+                        <a href="#">TEXTAREA</a>
+                        <a href="#">SELECT</a>
+                        <a href="#">OPTION</a>
+                        <a href="#">OPTGROUP</a>
+                        <a href="#">BUTTON</a>
+                        <a href="#">LABEL</a>
+                        <a href="#">FIELDSET</a>
+                        <a href="#">LEGEND</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Scripting</a>
+                    <div class="dropdown-content">
+                        <a href="#">SCRIPT</a>
+                        <a href="#">NOSCRIPT</a>
+                    </div>
+                </li>
+                <button id="switch" onclick="toggleTheme()">Temas</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="centralizada">
+        <corletra>
+            <main>
+                <h2><u id="title"></u></h2>
+                <p id="description"></p>
+
+                <div id="image"></div> 
+
+                <p>
+                    Turma: TIG 2022-2025
+                </p>
+
+                <p>
+                    Gonçalo Almeida
+                </p>
+            </main>
+        </corletra>
+    </div>
+
+</body>
+
+<script>
+    // function to set a given theme/color-scheme
+    function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+    }
+    // function to toggle between light and dark theme
+    function toggleTheme() {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+            setTheme('theme-light');
+        } else {
+            setTheme('theme-dark');
+        }
+    }
+    // Immediately invoked function to set the theme on initial load
+    (function () {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+            setTheme('theme-dark');
+        } else {
+            setTheme('theme-light');
+        }
+    })();
+
+    var elements = [
+        {
+            id: "doctype",
+            data: {
+                title: "Doctype",
+                description: "Esta tag é usada para definir o tipo de documento HTML que está sendo usado.",
+                image: "./assets/doc1.png"
+            }
+        },
+        {
+            id: "html",
+            data: {
+                title: "HTML",
+                description: "Esta tag define um fodase documento HTML.",
+                image: "./assets/doc1.png"
+            }
+        },
+        // Adicione mais elementos conforme necessário
+    ];
+
+    // Função para renderizar os dados do elemento
+    function renderElementData(elementId, data) {
+        var titleElement = document.getElementById("title");
+        titleElement.textContent = data.title;
+
+        var descriptionElement = document.getElementById("description");
+        descriptionElement.textContent = data.description;
+
+        var imageElement = document.getElementById("image");
+        imageElement.innerHTML = ''; // Limpa qualquer conteúdo anterior
+
+        var image = document.createElement('img');
+        image.src = data.image;
+        imageElement.appendChild(image);
+    }
+
+    // Adiciona o ouvinte de eventos a cada elemento
+    elements.forEach(function (element) {
+        var elementId = element.id;
+        var elementData = element.data;
+
+        var elementElement = document.getElementById(elementId);
+        elementElement.addEventListener("click", function () {
+            renderElementData(elementId, elementData);
+        });
+    });
+
+</script>
+
+</html>
